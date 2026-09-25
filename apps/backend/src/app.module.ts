@@ -4,6 +4,7 @@ import { AuthModule } from '@thallesp/nestjs-better-auth';
 import { TodosModule } from './todos/todos.module.js';
 import { auth } from '../lib/auth.js';
 import { ConfigModule } from '@nestjs/config';
+import { UsersModule } from './users/users.module.js';
 import * as path from 'path';
 
 export const { ObserveModule, ObserveInstrument } = createObserveModule();
@@ -27,6 +28,7 @@ export const { ObserveModule, ObserveInstrument } = createObserveModule();
     // }),
     AuthModule.forRoot({ auth }),
     TodosModule,
+    UsersModule,
   ],
 })
 export class AppModule {}

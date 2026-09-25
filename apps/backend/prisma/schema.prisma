@@ -8,6 +8,11 @@ generator client {
   output   = "../generated/prisma"
 }
 
+enum Role {
+  PROJECT_MANAGER
+  PROGRAMMER
+}
+
 datasource db {
   provider = "postgresql"
 }
@@ -16,6 +21,7 @@ model User {
   id            String    @id
   name          String
   email         String
+  role          Role
   emailVerified Boolean   @default(false)
   image         String?
   createdAt     DateTime  @default(now())
