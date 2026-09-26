@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { createObserveModule } from '@nestjs/observe';
 import { AuthModule } from '@thallesp/nestjs-better-auth';
 import { TodosModule } from './todos/todos.module.js';
-import { auth } from '../lib/auth.js';
+import { auth } from './lib/auth.js';
 import { ConfigModule } from '@nestjs/config';
 import { UsersModule } from './users/users.module.js';
 import * as path from 'path';
