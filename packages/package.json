@@ -8,6 +8,7 @@
     ".": "./src/index.ts"
   },
   "dependencies": {
+    "env": "^0.0.2",
     "nestjs-zod": "^5.5.0",
     "zod": "^4.6.5"
   }

@@ -6,4 +6,3 @@ export const emailCredentialsSchema = z.object({
 });
 
 export type EmailCredentialsSchema = z.infer<typeof emailCredentialsSchema>;
-export type EmailCredentialsDto = EmailCredentialsSchema;
